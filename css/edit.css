@@ -1,0 +1,99 @@
+.zui-wrapper {
+  position: relative;
+  height: 360px;
+  overflow-x: scroll;
+  margin-top:30px;
+}
+
+.zui-scroller {
+  width: 840px;
+}
+.edit-table {
+  border: none;
+  border-right: solid 1px #DDEFEF;
+  border-collapse: separate;
+  border-spacing: 0;
+  font: normal 13px Arial, sans-serif;
+  overflow-x:scroll;
+}
+
+.edit-table thead th {
+  background-color: #177370;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #fff;
+  white-space: nowrap;
+}
+
+.edit-table tbody td {
+  border-bottom: solid 1px #DDEFEF;
+  color: #333;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+  white-space: nowrap;
+  min-width:180px;
+}
+
+.edit-table {
+  border-left: solid 1px #DDEFEF;
+  border-right: solid 1px #DDEFEF;
+  left: 0;
+  position: absolute;
+  top: auto;
+}
+.Updatebtn1, .Editbtn {
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding:10px;
+  text-decoration:none;
+}
+
+.Updatebtn1:hover {
+	background:#177370;
+}
+.Updatebtn1 {
+  background: #44857D;
+  border: 1px solid #44857D;	
+  margin-left:50px;
+  position:absolute;
+  border-radius: 5px;
+}
+.Editbtn {
+  float:right;
+  background: red;
+  border: 1px solid red;
+  border-radius: 0 5px 5px 0;
+  width:54px;
+}
+.Editbtn:hover {
+	background:#D80003;
+}
+.slsform {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  height:30px;
+  width:204px;
+  margin: 0 auto;
+  padding:0;
+  margin-right:50px;
+}
+.sls-select:focus {
+ 	background-color: #ddd;
+	outline: none;	
+}
+.slsform input[type=number] {
+  padding: 15px;
+  border: none;
+  background: #f1f1f1;
+  width:120px;
+}
+.slsform input {
+  margin: 0;
+}
