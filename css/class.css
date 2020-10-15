@@ -1,0 +1,604 @@
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro);
+.tab-wrap {
+	-webkit-transition: 0.3s box-shadow ease;
+	transition: 0.3s box-shadow ease;
+	border-radius: 6px;
+	max-width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	  -ms-flex-wrap: wrap;
+		  flex-wrap: wrap;
+	position: relative;
+	list-style: none;
+	background-color: #fff;
+	margin: 40px 0;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.tab-wrap:hover {
+	box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+
+.tab {
+	display: none;
+}
+.tab:checked:nth-of-type(1) ~ .tab__content:nth-of-type(1) {
+	opacity: 1;
+	-webkit-transition: 0.5s opacity ease-in, 0.2s transform ease;
+	transition: 0.5s opacity ease-in, 0.2s transform ease;
+	position: relative;
+	top: 0;
+	z-index: 100;
+	-webkit-transform: translateY(0px);
+		  transform: translateY(0px);
+	text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(2) ~ .tab__content:nth-of-type(2) {
+	opacity: 1;
+	-webkit-transition: 0.5s opacity ease-in, 0.2s transform ease;
+	transition: 0.5s opacity ease-in, 0.2s transform ease;
+	position: relative;
+	top: 0;
+	z-index: 100;
+	-webkit-transform: translateY(0px);
+		  transform: translateY(0px);
+	text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(3) ~ .tab__content:nth-of-type(3) {
+	opacity: 1;
+	-webkit-transition: 0.5s opacity ease-in, 0.2s transform ease;
+	transition: 0.5s opacity ease-in, 0.2s transform ease;
+	position: relative;
+	top: 0;
+	z-index: 100;
+	-webkit-transform: translateY(0px);
+		  transform: translateY(0px);
+	text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(4) ~ .tab__content:nth-of-type(4) {
+	opacity: 1;
+	-webkit-transition: 0.5s opacity ease-in, 0.2s transform ease;
+	transition: 0.5s opacity ease-in, 0.2s transform ease;
+	position: relative;
+	top: 0;
+	z-index: 100;
+	-webkit-transform: translateY(0px);
+		  transform: translateY(0px);
+	text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(5) ~ .tab__content:nth-of-type(5) {
+	opacity: 1;
+	-webkit-transition: 0.5s opacity ease-in, 0.2s transform ease;
+	transition: 0.5s opacity ease-in, 0.2s transform ease;
+	position: relative;
+	top: 0;
+	z-index: 100;
+	-webkit-transform: translateY(0px);
+		  transform: translateY(0px);
+	text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(6) ~ .tab__content:nth-of-type(6) {
+	opacity: 1;
+	-webkit-transition: 0.5s opacity ease-in, 0.2s transform ease;
+	transition: 0.5s opacity ease-in, 0.2s transform ease;
+	position: relative;
+	top: 0;
+	z-index: 100;
+	-webkit-transform: translateY(0px);
+		  transform: translateY(0px);
+	text-shadow: 0 0 0;
+}
+.tab:first-of-type:not(:last-of-type) + label {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.tab:not(:first-of-type):not(:last-of-type) + label {
+  border-radius: 0;
+}
+.tab:last-of-type:not(:first-of-type) + label {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.tab:checked + label {
+	background-color: #fff;
+	box-shadow: 0 -1px 0 #fff inset;
+	cursor: default;
+}
+.tab:checked + label:hover {
+	box-shadow: 0 -1px 0 #fff inset;
+	background-color: #fff;
+}
+.tab + label {
+	width:100%;	  
+	box-shadow: 0 -1px 0 #eee inset;
+	border-radius: 6px 6px 0 0;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	color: #333;
+	-webkit-box-flex: 3;
+	-webkit-flex-grow: 3;
+	  -ms-flex-positive: 3;
+		  flex-grow: 3;
+	text-align: center;
+	background-color: #f2f2f2;
+	-webkit-user-select: none;
+	 -moz-user-select: none;
+	  -ms-user-select: none;
+		  user-select: none;
+	text-align: center;
+	-webkit-transition: 0.3s background-color ease, 0.3s box-shadow ease;
+	transition: 0.3s background-color ease, 0.3s box-shadow ease;
+	height: 50px;
+	box-sizing: border-box;
+	padding: 15px;
+}
+@media (min-width:768px) {
+		
+	.tab + label {
+		width:auto;
+	}
+}
+.tab + label:hover {
+	background-color: #f9f9f9;
+	box-shadow: 0 1px 0 #f4f4f4 inset;
+}
+.tab__content {
+	padding: 10px 25px 50px 25px;
+	background-color: transparent;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	opacity: 0;
+	left: 0;
+	-webkit-transform: translateY(-3px);
+		  transform: translateY(-3px);
+	border-radius: 6px;
+	
+}
+
+/* Boring Styles */
+
+h1,
+h2 {
+	margin: 0;
+	color: #444;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1em;
+	margin-bottom: 30px;
+}
+
+.container {
+	max-width:1150px;
+	margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+.zui-table {
+  border: none;
+  border-right: solid 1px #DDEFEF;
+  border-collapse: separate;
+  border-spacing: 0;
+  font: normal 13px Arial, sans-serif;
+  margin: 0 auto;
+}
+
+.zui-table thead th {
+  background-color: #177370;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #fff;
+  white-space: nowrap;
+}
+
+.zui-table tbody td {
+  border-bottom: solid 1px #DDEFEF;
+  color: #333;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+  white-space: nowrap;
+  width:auto;
+}
+
+.zui-wrapper {
+  position: relative;
+  height: 400px;
+  overflow-y: auto;
+  margin-left: 0 auto;
+}
+
+.zui-scroller {
+  width: auto;
+}
+
+.zui-table .zui-sticky-col {
+  border-left: solid 1px #DDEFEF;
+  border-right: solid 1px #DDEFEF;
+  left: 0;
+  position: absolute;
+  top: auto;
+  width: 250px;
+}
+.zui-sticky-col {
+	overflow-x:hidden;
+}
+<!---------------------------------------------------->
+.zui-table1 {
+  border: none;
+  border-right: solid 1px #DDEFEF;
+  border-collapse: separate;
+  border-spacing: 0;
+  font: normal 13px Arial, sans-serif;
+}
+
+.zui-table1 thead th {
+  background-color: #177370;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #fff;
+  white-space: nowrap;
+}
+
+.zui-table1 tbody td {
+  border-bottom: solid 1px #DDEFEF;
+  color: #333;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+  white-space: nowrap;
+  width:auto;
+}
+
+.zui-wrapper1 {
+  position: relative;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.zui-scroller1 {
+  width: 840px;
+}
+
+.zui-table1 .zui-sticky-col {
+  border-left: solid 1px #DDEFEF;
+  border-right: solid 1px #DDEFEF;
+  left: 0;
+  position: absolute;
+  top: auto;
+  width: 250px;
+}
+.zui-sticky-col {
+	overflow-x:hidden;
+}
+<!------------------------------------------------------->
+.profile {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;}
+
+.profileleft {
+	color:red;
+	width:20%;
+	background-color:#77BCA9;
+	padding: 50px;
+}
+.profileleft img {
+	display: block; 
+	width:160px; 
+	height:160px; 
+	margin-left:auto; 
+	margin-right: auto;
+}
+.profileleft p {
+	font-family: Fester; 
+	font-size:30px; 
+	color: white; 
+	text-align:center;
+}
+.dtl {
+  font-family: Arial;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dtl td, .dtl th {
+  border: 1px solid white;
+  padding: 8px;
+}
+.dtl td {
+	text-align: center;
+	color:black;
+}
+.dtl tr:nth-child(even){background-color: white;}
+
+.dtl th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #177370;
+  color: white;
+}
+
+.profileright {
+	color:black;
+	width:70%;
+	padding: 0px 50px 0px 50px;
+}
+
+.profileright p {
+	font-family: Bahnschrift;
+	padding-top: 10px;
+	padding-bottom:10px;
+	font-size:25px; 
+	background-color:#77BCA9;
+	color: white; 
+	text-align:center;
+}
+.ttcn {
+	margin-left:80px;
+	margin-right:80px;
+}
+.ttcn tr {
+	height:30px;
+}
+.ttcn td {
+	min-width:100px;
+}
+
+.tttitle, .dhttitle, .drltitle {
+	color:#003D59;
+	font-family: Bahnschrift;
+}
+.dht, .drl {
+	margin-left:auto;
+	margin-right:auto;
+}
+.dht tr, .drl tr {
+	height:30px;
+}
+.dht td, .drl td {
+	min-width:80px;
+	text-align:center;
+}
+.dhttitle, .drltitle {
+	background-color:#EFEFEF;
+	text-align:center;
+	}
+	
+
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 36.3%;
+  margin:30px auto;
+}
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #FE6625;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #FE6625;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #FE6625;
+  background: #FE6625;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 50% 50% 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.Updatebtn1 , .Exportbtn, .Editbtn {
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  padding:10px;
+  text-decoration:none;
+}
+
+.Updatebtn1:hover {
+	background:#177370;
+}
+.Updatebtn1 {
+  background: #44857D;
+  border: 1px solid #44857D;	
+}
+.Exportbtn:hover{
+	background:#FE6625;	
+}
+.Exportbtn {
+  float:right;
+  background: #FB9334;
+  border: 1px solid #FB9334;
+  margin-right:0px;
+}
+.Editbtn {
+  float:right;
+  background: #44857D;
+  border: 1px solid #44857D;
+  margin-right:4px;
+}
+.Editbtn:hover {
+	background:#177370;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.addrowForm , .updatesvForm, .updatehtForm , .updaterlForm , .addatvtForm , .updateatvtForm {
+  display: none;
+  bottom: 17px;
+  left: 150px; 
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+  width: 90%;
+  padding: 15px;
+  margin: 10px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form-container input[type=number] {
+  width: 90%;
+  padding: 15px;
+  margin: 10px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .Updatebtn1 {
+  background-color: #44857D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.select-style {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: #f1f1f1;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	overflow: hidden;
+	padding: 15px;
+}
+
+.select-style:focus {
+ 	background-color: #ddd;
+	outline: none;
+}
+.slsform {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width:500px;
+  margin: 10px auto;
+}
+.sls-select {
+    border: none;
+    box-shadow: none;
+    background: #f1f1f1;
+    background-image: none;
+	padding: 15px;
+	margin: 10px 5px 10px 5px;
+}
+.sls-select:focus {
+ 	background-color: #ddd;
+	outline: none;	
+}
+.slsform input[type=number] {
+  padding: 15px;
+  border: none;
+  background: #f1f1f1;
+  width:120px;
+}
+.slsform input {
+  margin: 10px 5px 10px 5px;
+}
+.atvtform {
+  display: inline-block;
+  flex-flow: row wrap;
+  align-items: center;
+  width:auto;
+  margin: 10px auto;
+}
+.atvt-select {
+	border: none;
+    box-shadow: none;
+    background: #f1f1f1;
+    background-image: none;
+	padding: 15px;
+	margin: 10px 5px 10px 5px;
+}
