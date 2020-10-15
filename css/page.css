@@ -1,0 +1,14 @@
+.pagecontent {
+	width:700px;
+	margin: 100px auto;
+	font-size:20px;
+}
+.pagecontent a {
+	color:#1B5D78;
+}
+.pagecontent a:hover {
+	color:#23769E;
+}
+.pageimage {
+	max-width: 700px;
+}
