@@ -1,0 +1,248 @@
+@font-face {
+  font-family: Logo;
+  src:url(../fonts/LesFruits.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Regular;
+  src:url(../fonts/icielpanton-lightitalic.otf); 
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src:url(../fonts/iCielNovecentosans-UltraBold.otf); 
+}
+
+@font-face {
+  font-family: Fester;
+  src:url(../fonts/Fester%20Bold.otf); 
+}
+
+@font-face {
+  font-family: Aztekb;
+  src:url(../fonts/aztekb.ttf); 
+}
+
+@font-face {
+  font-family: Bahnschrift;
+  src:url(../fonts/bahnschrift.ttf); 
+}
+@font-face {
+  font-family: Nabila;
+  src:url(../fonts/nabila_0.ttf); 
+}
+
+@font-face {
+  font-family: SVN;
+  src:url(../fonts/SVN-Blue_0.ttf); 
+}
+
+body{
+	padding:0; 
+	margin:0;
+	background-color:white;
+
+}
+
+.all{
+	margin-left:auto;
+	margin-right:auto;
+	max-width:1400px;
+	position:relative;
+	margin-top:0;
+	padding-bottom: 33px;
+	overflow: hidden;
+	min-height: calc(100vh - 153px);
+	
+}
+
+.lisbanner{
+	width: 100%;
+	max-height:300px;
+	display:block;
+	margin:auto auto;
+	position:static;
+}
+
+	
+
+.lisbanner ul {
+  list-style-type: none;
+  margin-left: 420px;
+  margin-top:40px;
+  padding: 0;
+}
+
+.lisbanner li {
+  float: left;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.lisbanner li a {
+  font-family: SVN;
+  font-size:20px;
+  font-weight:bold;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+}
+.lisbanner li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.lisbanner li a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.name{
+	position:absolute;
+	top:420px;
+	left:50%;
+    transform: translate(-50%, -50%);
+}
+.un a, .logout a{
+    font-family:Fester;
+	font-size: 26px;
+	text-decoration:none;
+	color:white;
+}
+.logout {
+	display:none;
+}
+
+.un:hover {
+	display:none;
+}
+
+.un:hover + .logout {
+	display:block;
+	text-decoration:underline;
+	font-size:24px;
+}
+.un:hover + .logout a{
+	text-decoration:underline;
+}
+
+.lislogo{
+	display:flex; 
+	height:80px;
+}
+#lislogoimg{
+	height: 50px; 
+	max-width: 50px; 
+	padding:20px 10px 0px 240px;  
+	float:left; 
+	object-fit: cover; 
+	margin: 10px;
+	z-index:9999;
+}
+
+.content{
+	margin:260px auto 100px 400px;
+	display:flex;
+	width:45%;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.left{
+	width:70%;
+	height:auto;
+}
+
+
+#Lop{
+	display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    max-width: 3000px;
+	padding:30px;
+	margin-top:20px;
+	background-color:white;
+	text-decoration:none;
+	border: none;
+	color:black;
+  -webkit-box-shadow: 0 10px 5px -6px #888888;
+  -moz-box-shadow: 0 10px 5px -6px #888888;
+  box-shadow: 0 10px 5px -6px #888888;	
+}
+#Lop:hover{
+	background-color:#E1E1E1;
+}
+.Ten , .TieuDeLop{
+	width:70%;
+	height:auto;
+	text-align:center;
+	font-family:Bahnschrift;
+}
+.SL , .TieuDeSL{
+	width:30%;
+	height:auto;
+	text-align:center;
+	font-family:Bahnschrift;
+}
+
+.TieuDe{
+	font-size:18px;
+	color:#44857D;
+	display: flex;
+	text-align:center;
+	font-family:Bahnschrift;
+	flex-direction: row;
+    justify-content:space-between;
+    max-width: 100%;
+	padding:0px 30px;
+	margin: -20px 0px -30px 0px;
+	font-weight:bold;
+}
+
+.right{
+	width:auto;
+	height:auto;
+	position:fixed;
+	z-index:999;
+}
+.ThemLop{
+	margin:0 auto;
+	padding:20px 34px;
+	vertical-align:middle;
+	text-decoration:none;
+	color:#FE6625;
+	font-size:50px;
+	font-weight:bold;
+	text-align:center;
+	border-radius:50%;
+ 	background:white;
+	-webkit-box-shadow: 3px 3px 7px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 3px 3px 7px -4px rgba(0, 0, 0, 1);
+    box-shadow: 3px 3px 7px -4px rgba(0, 0, 0, 1);
+}
+.ThemLop:hover{
+	background:#FE6625;
+	color:white;
+}
+
+.footer {
+   position:relative;
+   left: 0;
+   height:120px;
+   width: 100%;
+   background-color: #FE6625;
+   color: white;
+   text-align: center;
+   font-family:Arial;
+   z-index:-999;
+}
