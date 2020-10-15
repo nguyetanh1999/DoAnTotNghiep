@@ -1,0 +1,493 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Style the tab */
+
+* {
+			box-sizing: border-box
+			
+		}
+		body {
+			font-family: "Lato", sans-serif;
+		}
+
+		/* Style the tab */
+		.tab {
+		    float: left;
+			
+		    border: 1px solid #ddd;
+		    background-color: #f5f5f5;
+		    width: 20%;
+		    height: 900px;
+		}
+
+		/* Style the buttons inside the tab */
+		.tab button {
+		    display: block;
+		
+		    color: black;
+		    padding: 22px 16px;
+		    width: 100%;
+		    border: none;
+		    outline: none;
+		    text-align: left;
+		    cursor: pointer;
+		    transition: 0.3s;
+		    font: 400 17px Lato, sans-serif;
+		}
+
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+		    background-color: #ddd;
+		    color: black;
+		}
+
+		/* Create an active/current "tab button" class */
+		.tab button.active {
+		    background-color: #ddd;
+		    color: black;
+		    font: 500 20px Lato, sans-serif;
+		}
+
+		/* Style the tab content */
+		.tabcontent {
+		    float: left;
+		    padding: 0px 12px;
+		    border: 1px solid #ddd;
+		    width: 73%;
+		    border-left: none;
+		    height: 900px;
+		}
+/* Boring Styles */
+
+h1,
+h2 {
+	margin: 0;
+	color: #444;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1em;
+	margin-bottom: 30px;
+}
+
+.container {
+	max-width:1150px;
+	margin:0 auto;
+}
+
+
+.profile {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;}
+
+.profileleft {
+	color:red;
+	width:60%;
+	background-color:#77BCA9;
+	padding: 50px;
+}
+.profileleft img {
+	display: block; 
+	width:160px; 
+	height:160px; 
+	margin-left:auto; 
+	margin-right: auto;
+}
+.profileleft p {
+	font-family: Fester; 
+	font-size:30px; 
+	color: white; 
+	text-align:center;
+}
+.dtl {
+  font-family: Arial;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dtl td, .dtl th {
+  border: 1px solid white;
+  padding: 8px;
+}
+.dtl td {
+	text-align: center;
+	color:black;
+}
+.dtl tr:nth-child(even){background-color: white;}
+
+.dtl th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #177370;
+  color: white;
+}
+
+.profileright {
+	color:black;
+	width:100%;
+	padding: 0px 50px 0px 50px;
+}
+
+.profileright p {
+	font-family: Bahnschrift;
+	padding-top: 10px;
+	padding-bottom:10px;
+	font-size:25px; 
+	background-color:#77BCA9;
+	color: white; 
+	text-align:center;
+}
+.ttcn {
+	margin-left:80px;
+	margin-right:80px;
+}
+.ttcn tr {
+	height:30px;
+}
+.ttcn td {
+	min-width:100px;
+}
+
+.tttitle, .dhttitle, .drltitle {
+	color:#003D59;
+	font-family: Bahnschrift;
+}
+.dht, .drl {
+	margin-left:auto;
+	margin-right:auto;
+}
+.dht tr, .drl tr {
+	height:30px;
+}
+.dht td, .drl td {
+	min-width:80px;
+	text-align:center;
+}
+.dhttitle, .drltitle {
+	background-color:#EFEFEF;
+	text-align:center;
+	}
+	
+.zui-table {
+  border: none;
+  border-right: solid 1px #DDEFEF;
+  border-collapse: separate;
+  border-spacing: 0;
+  font: normal 13px Arial, sans-serif;
+  margin: 0 auto;
+}
+
+.zui-table thead th {
+  background-color: #177370;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #fff;
+  white-space: nowrap;
+}
+
+.zui-table tbody td {
+  border-bottom: solid 1px #DDEFEF;
+  color: #333;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+  white-space: nowrap;
+  width:auto;
+}
+
+.zui-wrapper {
+  position: relative;
+  height: 400px;
+  overflow-y: auto;
+  margin-left: 0 auto;
+}
+
+.zui-scroller {
+  width: auto;
+}
+
+.zui-table .zui-sticky-col {
+  border-left: solid 1px #DDEFEF;
+  border-right: solid 1px #DDEFEF;
+  left: 0;
+  position: absolute;
+  top: auto;
+  width: 250px;
+}
+.zui-sticky-col {
+	overflow-x:hidden;
+}
+
+.zui-table1 {
+  border: none;
+  border-right: solid 1px #DDEFEF;
+  border-collapse: separate;
+  border-spacing: 0;
+  font: normal 13px Arial, sans-serif;
+}
+
+.zui-table1 thead th {
+  background-color: #177370;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #fff;
+  white-space: nowrap;
+}
+
+.zui-table1 tbody td {
+  border-bottom: solid 1px #DDEFEF;
+  color: #333;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+  white-space: nowrap;
+  width:auto;
+}
+
+.zui-wrapper1 {
+  position: relative;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.zui-scroller1 {
+  width: 840px;
+}
+
+.zui-table1 .zui-sticky-col {
+  border-left: solid 1px #DDEFEF;
+  border-right: solid 1px #DDEFEF;
+  left: 0;
+  position: absolute;
+  top: auto;
+  width: 250px;
+}
+.zui-sticky-col {
+	overflow-x:hidden;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 36.3%;
+  margin:30px auto;
+}
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #FE6625;
+  border-right: none;
+  padding: 5px;
+  height: 35px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #FE6625;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #FE6625;
+  background: #FE6625;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 50% 50% 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.Updatebtn1 , .Exportbtn, .Editbtn {
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  padding:10px;
+  text-decoration:none;
+}
+
+.Updatebtn1:hover {
+	background:#177370;
+}
+.Updatebtn1 {
+  background: #44857D;
+  border: 1px solid #44857D;	
+}
+.Exportbtn:hover{
+	background:#FE6625;	
+}
+.Exportbtn {
+  float:right;
+  background: #FB9334;
+  border: 1px solid #FB9334;
+  margin-right:0px;
+}
+.Editbtn {
+  float:right;
+  background: #44857D;
+  border: 1px solid #44857D;
+  margin-right:4px;
+}
+.Editbtn:hover {
+	background:#177370;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.addrowForm , .updatesvForm, .updatehtForm , .updaterlForm , .addatvtForm , .updateatvtForm {
+  display: none;
+  bottom: 17px;
+  left: 150px; 
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+  width: 90%;
+  padding: 15px;
+  margin: 10px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form-container input[type=number] {
+  width: 90%;
+  padding: 15px;
+  margin: 10px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .Updatebtn1 {
+  background-color: #44857D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.select-style {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: #f1f1f1;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	overflow: hidden;
+	padding: 15px;
+}
+
+.select-style:focus {
+ 	background-color: #ddd;
+	outline: none;
+}
+.slsform {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width:500px;
+  margin: 10px auto;
+}
+.sls-select {
+    border: none;
+    box-shadow: none;
+    background: #f1f1f1;
+    background-image: none;
+	padding: 15px;
+	margin: 10px 5px 10px 5px;
+}
+.sls-select:focus {
+ 	background-color: #ddd;
+	outline: none;	
+}
+.slsform input[type=number] {
+  padding: 15px;
+  border: none;
+  background: #f1f1f1;
+  width:120px;
+}
+.slsform input {
+  margin: 10px 5px 10px 5px;
+}
+.atvtform {
+  display: inline-block;
+  flex-flow: row wrap;
+  align-items: center;
+  width:auto;
+  margin: 10px auto;
+}
+.atvt-select {
+	border: none;
+    box-shadow: none;
+    background: #f1f1f1;
+    background-image: none;
+	padding: 15px;
+	margin: 10px 5px 10px 5px;
+}
